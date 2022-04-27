@@ -1,6 +1,9 @@
 name: Maven CI
 
-on: [push]
+on:
+  push:
+    tags-ignore:
+      - "v*"
 
 jobs:
   build:

@@ -26,7 +26,7 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          draft: true
           fail_on_unmatched_files: true
+          generate_release_note: true
           files: |
             target/statique.zip
